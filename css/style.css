@@ -4,6 +4,58 @@ body {
   url("../img/img-2.jpg") top right fixed no-repeat;*/
 }
 
-main > div:nth-child(1):hover + article {
+.container {
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.main-header {
+  margin: 50px auto; 
+  
+  
+}
+.logo {
+  float:left;
+  font-family: serif;
+  font-size: 100px;
+}
+
+.main-menu {
+  float: right;
+  margin: 0;
+  margin-top: 40px;
+  padding: 0;
+  list-style: none;
+}
+
+.main-menu li {
+  display: inline-block;
+  margin-right: 20px;  
+  font-family: sans-serif;
+  font-size: 40px;  
+}
+.main-menu li:last-child {
+  margin-right: 0;
+}
+
+.main-menu a {
+  text-decoration: none;
+  color: crimson
+}
+
+
+main > div/*:nth-child(1):hover*/ + article {
   display: none;
+}
+
+main div, main div b {
+  display: inline-block;
 }
