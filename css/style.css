@@ -134,4 +134,12 @@ main > div:hover + article {
   display: block;
 }
 
+h1.about, h1.music {
+  margin: 100px auto;
+  display: block;
+  font-family: "Neucha", sans-serif;
+  font-size: 50px; 
+}
+
+
 
