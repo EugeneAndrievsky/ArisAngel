@@ -50,8 +50,8 @@ body {
 
 
 .main-header {
-  margin-top: 25px; 
-  margin-bottom: 40px;
+  margin-top: 15px; 
+  margin-bottom: 30px;
   position: relative;
   
   
@@ -59,23 +59,24 @@ body {
 .logo {
   
   float:left;
-  font-family: serif;
-  font-size: 100px;
+  font-family: "Italianno", serif;
+  font-size: 110px;
 }
 
 .main-menu {
   float: right;
   margin: 0;
-  margin-top: 40px;
+  margin-top: 43px;
   padding: 0;
   list-style: none;
 }
 
 .main-menu li {
   display: inline-block;
-  margin-right: 20px;  
-  font-family: sans-serif;
+  margin-right: 35px;  
+  font-family: "Philosopher", sans-serif;
   font-size: 40px;  
+  
 }
 .main-menu li:last-child {
   margin-right: 0;
@@ -109,8 +110,8 @@ main  b, main span {
 }
 
 main b {
-  font-family: serif;
-  font-size: 18px;
+  font-family: "Cuprum", serif;
+  font-size: 20px;
 }
 
 main span {
@@ -122,8 +123,10 @@ main article {
   display: none;
   position: absolute;
   top: 200px;
-  left: 40%;
+  left: 35%;
   z-index: 3;
+  font-family: "Philosopher", serif;
+  font-size: 20px;
   
 }
 
