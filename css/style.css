@@ -1,5 +1,5 @@
 body {
-  
+  overflow: hidden;
   /*background:
   url("../img/img-1-mirror.jpg") top left fixed no-repeat,
   url("../img/img-2.jpg") top right fixed no-repeat;*/ 
@@ -40,7 +40,7 @@ img {
 }
 
 .container {
-  width: 1000px;
+  width: 750px;
   margin: 0 auto;
 }
 
@@ -59,13 +59,13 @@ img {
 .logo {  
   float:left;
   font-family: "Italianno", serif;
-  font-size: 110px;
+  font-size: 83px;
 }
 
 .main-menu {
   float: right;
   margin: 0;
-  margin-top: 43px;
+  margin-top: 30px;
   padding: 0;
   list-style: none;
 }
@@ -74,7 +74,7 @@ img {
   display: inline-block;
   margin-right: 35px;  
   font-family: "Philosopher", sans-serif;
-  font-size: 40px;    
+  font-size: 30px;    
 }
 
 .main-menu li:last-child {
