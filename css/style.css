@@ -1,7 +1,12 @@
 body {
+  
   /*background:
   url("../img/img-1-mirror.jpg") top left fixed no-repeat,
   url("../img/img-2.jpg") top right fixed no-repeat;*/ 
+}
+
+img {
+  height: 768px;
 }
 
 .left-back, .right-back {
