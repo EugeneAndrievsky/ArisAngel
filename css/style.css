@@ -110,23 +110,23 @@ main  b, main span {
 
 main b {
   font-family: "Cuprum", serif;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 main span {
-  font-size: 14px;
+  font-size: 11px;
   color: gray
 }
 
 main article {  
   display: none;
   position: absolute;
-  top: 200px;
-  left: 35%;
+  top: 150px;
+  left: 33%;
   z-index: 3;
   
   font-family: "Philosopher", serif;
-  font-size: 20px;  
+  font-size: 15px;  
 }
 
 main > div:hover + article {
@@ -135,7 +135,7 @@ main > div:hover + article {
 
 h1.about, h1.music {
   display: block;
-  margin: 100px auto;  
+  margin: 75px auto;  
   font-family: "Neucha", sans-serif;
-  font-size: 50px; 
+  font-size: 38px; 
 }
