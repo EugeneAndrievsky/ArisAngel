@@ -6,7 +6,7 @@ body {
 }
 
 img {
-  height: 768px;
+  height: 100vh;
 }
 
 .left-back, .right-back {
