@@ -110,49 +110,58 @@ li.current a {
   justify-content: space-between;
 }
 
-main div {
+.main-content div {
   display: inline-block;
   padding: 4px;
   margin-bottom: 8px;
 }
 
-main div:hover > b {
+.main-content div:hover > b {
   text-shadow: 1px 1px 1px crimson;
 }
 
-main  b, main span {
+.main-content  b,
+.main-content span {
   display: block;
-  text-align: center;  
+
+  text-align: center;
+  cursor: default;
 }
 
-main b {
+.main-content b {
   font-family: "Cuprum", serif;
   font-size: 15px;
 }
 
-main span {
+.main-content span {
   font-size: 11px;
-  color: gray
+  color: gray;
 }
 
-main article {  
-  display: none;
+.main-content article {
   position: absolute;
   top: 150px;
   left: 33%;
   z-index: 3;
-  
+
+  display: none;
+
   font-family: "Philosopher", serif;
-  font-size: 15px;  
+  font-size: 15px;
 }
 
-main > div:hover + article {
+.main-content > div:hover + article {
   display: block;
 }
 
-h1.about, h1.music {
+/*--- Стили внутренних страниц ---*/
+
+h1.about,
+h1.music {
   display: block;
-  margin: 75px auto;  
+  align-self: center;
+  margin: 75px auto;
+
   font-family: "Neucha", sans-serif;
-  font-size: 38px; 
+  font-size: 38px;
 }
