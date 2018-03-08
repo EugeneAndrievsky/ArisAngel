@@ -101,7 +101,7 @@ body {
 
 
 
-.main-content {
+.main-content__wrapper {
   position: relative;
 
   display: flex;
@@ -155,10 +155,8 @@ body {
 
 /*--- Стили внутренних страниц ---*/
 
-h1.about,
-h1.music {
+.main-content__title {
   display: block;
-  align-self: center;
   margin: 75px auto;
 
   font-family: "Neucha", sans-serif;

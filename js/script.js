@@ -14,6 +14,6 @@ $(function(){
     $this.addClass('main-nav__link--current');
 
     $('#content').remove();
-    $('main').load(url + ' #content').hide().fadeIn('slow');
+    $('.main-content').load(url + ' #content').hide().fadeIn('slow');
   });
 });
