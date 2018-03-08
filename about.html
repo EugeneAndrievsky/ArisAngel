@@ -12,19 +12,27 @@
 <body>
 
   <header class="main-header">
-    <nav class="clearfix container">
-      <a class="logo" href="index.html">Aris Angel</a>
-      <ul class="main-menu">
-        <li><a href="poetry.html">Cтихи</a></li>
-        <li><a href="music.html">Музыка</a></li>
-        <li class="current"><span>Обо мне</span></li>
-      </ul>
-    </nav>
+    <div class="main-header__wrapper  container">
+      <nav class="main-nav">
+        <a class="main-nav__logo" href="index.html">Aris Angel</a>
+        <ul class="main-nav__list">
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="poetry.html">Cтихи</a>
+          </li>
+          <li class="main-nav__item">
+            <a class="main-nav__link" href="music.html">Музыка</a>
+          </li>
+          <li class="main-nav__item">
+            <span class="main-nav__link  main-nav__link--current">Обо мне</span>
+          </li>
+        </ul>
+      </nav>
+    </div>
   </header>
-
-  <main class="container">
-    <section class="main-content" id="content">
-      <h1 class="about">Я такая ня! ^^</h1>
+  
+  <main class="main-content">
+    <section class="main-content__wrapper  container" id="content">
+      <h1 class="main-content__title">Я такая ня! ^^</h1>
     </section>
   </main>
 
