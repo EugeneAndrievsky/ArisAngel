@@ -1,5 +1,3 @@
-$('header').hide();
-
 $(function(){
   $('header').fadeIn(2000);
   $('.main-nav__list').on('click', '.main-nav__link', function(event) {

@@ -8,6 +8,10 @@ body {
   background-attachment: fixed;
 }
 
+.hidden {
+  display: none;
+}
+
 .container {
   width: 750px;
   margin: 0 auto;
