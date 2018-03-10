@@ -1,21 +1,29 @@
 body {
-  background:
+  min-width: 300px;
+  padding: 0 10px;
+  /*background:
     linear-gradient(to right, transparent 10%, white 27%, white 73%, transparent 90%),
     url("../img/img-1-mirror.jpg") left,
     url("../img/img-2.jpg") right -100px top 0;
   background-size: contain;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: fixed;*/
 }
 
 .hidden {
   display: none;
 }
 
-.container {
-  width: 750px;
-  margin: 0 auto;
+@media (min-width: 768px) {
+
+  .container {
+    width: 748px;
+    margin: 0 auto;
+  }
+
 }
+
+
 
 .main-header__wrapper {
   padding-top: 11px;
@@ -26,13 +34,15 @@ body {
 
 .main-nav {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
 }
 
 .main-nav__logo {
   font-family: "Italianno", serif;
   font-size: 83px;
   text-decoration: none;
+  text-align: center;
+  text-indent: -20px;
   color: black;
 }
 
@@ -42,6 +52,8 @@ body {
 }
 
 .main-nav__list {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   margin-top: 30px;
   padding: 0;
@@ -51,11 +63,8 @@ body {
 
 .main-nav__item {
   display: inline-block;
-  margin-right: 30px;
-}
 
-.main-nav__item:last-child {
-  margin-right: 0;
+  text-align: center;
 }
 
 .main-nav__link {
@@ -72,89 +81,202 @@ body {
   color: crimson;
 }
 
-.main-nav__link::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 0;
-
-  width: 100%;
-  height: 3px;
-
-  background-color: rgba(220, 20, 60, .7); /*crimson*/
-  opacity: 0;
-
-  transition: opacity 0.3s, transform 0.3s;
-  transform: translateY(10px);
-}
-
-.main-nav__link:hover::after {
-  opacity: 1;
-
-  transform: translateY(0px);
-}
-
 .main-nav__link--current {
   opacity: 0.5;
   cursor: default;
 }
 
-.main-nav__link--current::after {
-  display: none;
+
+
+@media (min-width: 768px) {
+
+  .main-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-nav__logo {
+    font-family: "Italianno", serif;
+    font-size: 83px;
+    text-decoration: none;
+    text-align: left;
+    text-indent: 0;
+    color: black;
+  }
+
+  .main-nav__logo:link,
+  .main-nav__logo:visited {
+    color: black;
+  }
+
+  .main-nav__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+
+    list-style: none;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+    margin-right: 30px;
+
+    text-align: left;
+  }
+
+  .main-nav__item:last-child {
+    margin-right: 0;
+  }
+
+  .main-nav__link {
+    position: relative;
+
+    font-family: "Philosopher", sans-serif;
+    font-size: 30px;
+    color: crimson;
+    text-decoration: none;
+  }
+
+  .main-nav__link:link,
+  .main-nav__link:visited {
+    color: crimson;
+  }
+
+  .main-nav__link::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: rgba(220, 20, 60, .7); /*crimson*/
+    opacity: 0;
+
+    transition: opacity 0.3s, transform 0.3s;
+    transform: translateY(10px);
+  }
+
+  .main-nav__link:hover::after {
+    opacity: 1;
+
+    transform: translateY(0px);
+  }
+
+  .main-nav__link--current {
+    opacity: 0.5;
+    cursor: default;
+  }
+
+  .main-nav__link--current::after {
+    display: none;
+  }
+
 }
 
 
 
-.main-content__wrapper {
-  position: relative;
-
+.poem {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
 }
 
-.main-content div {
-  display: inline-block;
-  padding: 4px;
-  margin-bottom: 8px;
+.poem__name {
+  margin-bottom: 20px;
 }
 
-.main-content div:hover > b {
-  text-shadow: 1px 1px 1px crimson;
-}
-
-.main-content  b,
-.main-content span {
+.poem__title {
   display: block;
 
   text-align: center;
-  cursor: default;
 }
 
-.main-content b {
-  font-family: "Cuprum", serif;
-  font-size: 15px;
-}
-
-.main-content span {
-  font-size: 11px;
-  color: gray;
-}
-
-.main-content article {
-  position: absolute;
-  top: 150px;
-  left: 33%;
-  z-index: 3;
-
-  display: none;
-
-  font-family: "Philosopher", serif;
-  font-size: 15px;
-}
-
-.main-content > div:hover + article {
+.poem__subtitle {
   display: block;
+
+  text-align: center;
+}
+
+.poem__content {
+  margin-bottom: 20px;
+}
+
+.poem__content p:first-child {
+  margin-top: 0;
+}
+
+.poem__content p:last-child {
+  margin-bottom: 0;
+}
+
+
+
+@media (min-width: 768px) {
+
+  .poem {
+    display: flex;
+  }
+
+
+
+  .main-content__wrapper {
+    position: relative;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .main-content div {
+    display: inline-block;
+    padding: 4px;
+    margin-bottom: 8px;
+  }
+
+  .main-content div:hover > b {
+    text-shadow: 1px 1px 1px crimson;
+  }
+
+  .main-content  b,
+  .main-content span {
+    display: block;
+
+    text-align: center;
+    cursor: default;
+  }
+
+  .main-content b {
+    font-family: "Cuprum", serif;
+    font-size: 15px;
+  }
+
+  .main-content span {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .main-content article {
+    position: absolute;
+    top: 150px;
+    left: 33%;
+    z-index: 3;
+
+    display: none;
+
+    font-family: "Philosopher", serif;
+    font-size: 15px;
+  }
+
+  .main-content > div:hover + article {
+    display: block;
+  }
+
 }
 
 /*--- Стили внутренних страниц ---*/
