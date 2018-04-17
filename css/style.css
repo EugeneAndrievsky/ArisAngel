@@ -1,13 +1,20 @@
 body {
   min-width: 300px;
   padding: 0 10px;
-  /*background:
-    linear-gradient(to right, transparent 10%, white 27%, white 73%, transparent 90%),
-    url("../img/img-1-mirror.jpg") left,
-    url("../img/img-2.jpg") right -100px top 0;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-attachment: fixed;*/
+}
+
+@media (min-width: 768px) {
+
+  body {
+    background:
+      linear-gradient(to right, transparent 10%, white 27%, white 73%, transparent 90%),
+      url("../img/img-1-mirror.jpg") left,
+      url("../img/img-2.jpg") right -100px top 0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+
 }
 
 .hidden {
@@ -195,16 +202,27 @@ body {
   display: block;
 
   text-align: center;
+
+  cursor: pointer;
+}
+
+.poem__title:active {
+  text-shadow: 1px 1px 2px crimson;
 }
 
 .poem__subtitle {
   display: block;
 
   text-align: center;
+
+  cursor: default;
 }
 
 .poem__content {
   margin-bottom: 20px;
+
+  font-family: "Philosopher", serif;
+  font-size: 18px;
 }
 
 .poem__content p:first-child {
@@ -219,20 +237,60 @@ body {
 
 @media (min-width: 768px) {
 
-  .poem {
-    display: flex;
-  }
-
-
-
   .main-content__wrapper {
     position: relative;
 
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
   }
 
+  .poem {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+
+  .poem__name {
+    margin-bottom: 10px;
+  }
+
+  .poem__title {
+    font-family: "Cuprum", serif;
+    font-size: 15px;
+  }
+
+  .poem__title:hover {
+    text-shadow: 1px 1px 2px crimson;
+  }
+
+  .poem__subtitle {
+    font-size: 11px;
+    color: gray;
+  }
+
+  .poem__content {
+    position: absolute;
+    top: 180px;
+    z-index: 3;
+    left: 25%;
+    right: 25%;
+
+    /* display: flex;
+    flex-direction: column;
+    align-items: space-around; */
+
+    font-family: "Philosopher", serif;
+    font-size: 18px;
+  }
+
+  .poem__content p {
+
+  }
+
+/*
   .main-content div {
     display: inline-block;
     padding: 4px;
@@ -275,7 +333,7 @@ body {
 
   .main-content > div:hover + article {
     display: block;
-  }
+  } */
 
 }
 
@@ -287,4 +345,5 @@ body {
 
   font-family: "Neucha", sans-serif;
   font-size: 38px;
+  text-align: center;
 }
