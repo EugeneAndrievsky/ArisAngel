@@ -194,19 +194,24 @@ body {
   align-items: center;
 }
 
-.poem__name {
-  margin-bottom: 20px;
-}
-
 .poem__title {
   display: block;
+  margin-bottom: 20px;
 
   text-align: center;
 
   cursor: pointer;
 }
 
+.poem__title:hover {
+  text-shadow: 1px 1px 2px crimson;
+}
+
 .poem__title:active {
+  text-shadow: 1px 2px 4px crimson;
+}
+
+.poem__title--current {
   text-shadow: 1px 1px 2px crimson;
 }
 
@@ -258,12 +263,18 @@ body {
   }
 
   .poem__title {
+    margin-bottom: 15px;
+
     font-family: "Cuprum", serif;
     font-size: 15px;
   }
 
   .poem__title:hover {
     text-shadow: 1px 1px 2px crimson;
+  }
+
+  .poem__title:active {
+    text-shadow: 1px 2px 4px crimson;
   }
 
   .poem__subtitle {
@@ -273,9 +284,9 @@ body {
 
   .poem__content {
     position: absolute;
-    top: 180px;
+    top: 125px;
     z-index: 3;
-    left: 25%;
+    left: 30%;
     right: 25%;
 
     /* display: flex;
